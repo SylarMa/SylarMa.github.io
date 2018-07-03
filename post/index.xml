@@ -17,9 +17,9 @@
       <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
       
       <guid>http://malonghua.com/post/hugo-auto-deploy/</guid>
-      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;/p&gt;
+      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
+&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
 
