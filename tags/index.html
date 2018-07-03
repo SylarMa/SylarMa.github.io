@@ -5,7 +5,9 @@
   <meta charset="utf-8" />
 
   
-  <title>My New Hugo Site</title>
+  <title>
+  Tags | My New Hugo Site
+</title>
 
   
   
@@ -29,7 +31,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="My New Hugo Site" />
   <meta property="og:description" content="" />
-  <meta property="og:url" content="http://malonghua.com/" />
+  <meta property="og:url" content="http://malonghua.com/tags/" />
   <meta property="og:image" content="http://malonghua.com/img/avatar.jpg" />
 
 
@@ -38,7 +40,7 @@
 <meta name="generator" content="Hugo 0.42.2" />
 
 
-<link rel="canonical" href="http://malonghua.com/" />
+<link rel="canonical" href="http://malonghua.com/tags/" />
 <link rel="alternative" href="/index.xml" title="My New Hugo Site" type="application/atom+xml" />
 
 
@@ -73,6 +75,8 @@
 
 
 
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.2.8/alt/video-js-cdn.min.css" />
+
 <link rel="stylesheet" href="/css/bundle.ff02473a9a.css" />
 
 
@@ -106,7 +110,7 @@
   <header class="site-header">
   <img class="avatar" src="" alt="Avatar">
   
-  <h1 class="title">My New Hugo Site</h1>
+  <h2 class="title">My New Hugo Site</h2>
   
   <p class="subtitle"></p>
   <button class="menu-toggle" type="button">
@@ -175,16 +179,14 @@
   </nav>
 </header>
 
-  <section class="main post-list">
-    <header class="list-header offscreen">
-      <h2 class="list-label">All Posts</h2>
+  <section class="main post-detail terms-list">
+    <header class="post-header">
+      <h1 class="post-title">Tags</h1>
     </header>
-    
-    
-      <p>There's nothing here.<br>Create an interesting post with the command:</p>
-      <p><code>$ hugo new post/hello-world.md</code></p>
-    
-    
+    <div class="tags-cloud">
+      
+      
+    </div>
   </section>
   <footer class="site-footer">
   <p>© 2017-2018 My New Hugo Site</p>
@@ -193,6 +195,30 @@
 </footer>
 
 
+
+<script async src="//cdn.bootcss.com/video.js/6.2.8/alt/video.novtt.min.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
 
 <script src="/js/bundle.d1288006cf.js"></script>
 
