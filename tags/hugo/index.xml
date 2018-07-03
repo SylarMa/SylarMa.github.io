@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 猪逻辑公园工作室</title>
-    <link>http://malonghua.com/post/</link>
-    <description>Recent content in Posts on 猪逻辑公园工作室</description>
+    <title>Hugo on 猪逻辑公园工作室</title>
+    <link>http://malonghua.com/tags/hugo/</link>
+    <description>Recent content in Hugo on 猪逻辑公园工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <lastBuildDate>Tue, 03 Jul 2018 16:40:57 +0800</lastBuildDate>
     
-	<atom:link href="http://malonghua.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://malonghua.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,28 +22,6 @@
 &lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
 
 &lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hello Hugo</title>
-      <link>http://malonghua.com/post/hello-hugo/</link>
-      <pubDate>Tue, 03 Jul 2018 16:39:53 +0800</pubDate>
-      
-      <guid>http://malonghua.com/post/hello-hugo/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://malonghua.com/post/hello-world/</link>
-      <pubDate>Tue, 03 Jul 2018 16:36:17 +0800</pubDate>
-      
-      <guid>http://malonghua.com/post/hello-world/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

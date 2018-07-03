@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://malonghua.com/post/hugo-auto-deploy/</loc>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://malonghua.com/post/hello-hugo/</loc>
+    <lastmod>2018-07-03T16:39:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://malonghua.com/post/hello-world/</loc>
     <lastmod>2018-07-03T16:36:17+08:00</lastmod>
   </url>
@@ -13,32 +23,44 @@
   </url>
   
   <url>
-    <loc>http://malonghua.com/</loc>
-    <lastmod>2018-07-03T16:36:17+08:00</lastmod>
+    <loc>http://malonghua.com/tags/hugo/</loc>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://malonghua.com/post/</loc>
-    <lastmod>2018-07-03T16:36:17+08:00</lastmod>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://malonghua.com/tags/taga/</loc>
-    <lastmod>2018-07-03T16:36:17+08:00</lastmod>
+    <lastmod>2018-07-03T16:39:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://malonghua.com/tags/tagb/</loc>
-    <lastmod>2018-07-03T16:36:17+08:00</lastmod>
+    <lastmod>2018-07-03T16:39:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://malonghua.com/tags/</loc>
-    <lastmod>2018-07-03T16:36:17+08:00</lastmod>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://malonghua.com/</loc>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   

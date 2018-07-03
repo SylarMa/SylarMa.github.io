@@ -5,9 +5,7 @@
   <meta charset="utf-8" />
 
   
-  <title>
-  Tags | 猪逻辑公园工作室
-</title>
+  <title>Hugo 自动化部署脚本 deploy.py</title>
 
   
   
@@ -17,22 +15,36 @@
 
 
   
-  <meta name="author" content="" />
-  <meta name="description" content="" />
+  <meta name="author" content="CoderZh" />
+  <meta name="description" content="以下内容出自大神CoderZh
+之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。
+脚本路径：https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py
+
+" />
 
   
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@gohugoio" />
-  <meta name="twitter:title" content="猪逻辑公园工作室" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="http://malonghua.com/img/avatar.jpg" />
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Hugo 自动化部署脚本 deploy.py" />
+    <meta name="twitter:description" content="以下内容出自大神CoderZh
+之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。
+脚本路径：https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py
+
+" />
+    <meta name="twitter:image" content="http://malonghua.com/img/cover.jpg" />
+  
 
   
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="猪逻辑公园工作室" />
-  <meta property="og:description" content="" />
-  <meta property="og:url" content="http://malonghua.com/tags/" />
-  <meta property="og:image" content="http://malonghua.com/img/avatar.jpg" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hugo 自动化部署脚本 deploy.py" />
+  <meta property="og:description" content="以下内容出自大神CoderZh
+之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。
+脚本路径：https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py
+
+" />
+  <meta property="og:url" content="http://malonghua.com/post/hugo-auto-deploy/" />
+  <meta property="og:image" content="http://malonghua.com/img/cover.jpg" />
 
 
 
@@ -40,7 +52,7 @@
 <meta name="generator" content="Hugo 0.42.2" />
 
 
-<link rel="canonical" href="http://malonghua.com/tags/" />
+<link rel="canonical" href="http://malonghua.com/post/hugo-auto-deploy/" />
 <link rel="alternative" href="/index.xml" title="猪逻辑公园工作室" type="application/atom+xml" />
 
 
@@ -103,6 +115,8 @@
     
     <div class="suspension">
       <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      
+        
       
     </div>
     
@@ -179,26 +193,80 @@
   </nav>
 </header>
 
-  <section class="main post-detail terms-list">
+  <section class="main post-detail">
     <header class="post-header">
-      <h1 class="post-title">Tags</h1>
+      <h1 class="post-title">Hugo 自动化部署脚本 deploy.py</h1>
+      <p class="post-meta">@CoderZh · Jul 3, 2018 · 1 min read</p>
     </header>
-    <div class="tags-cloud">
+    <article class="post-content"><p>以下内容出自大神CoderZh</p>
+
+<p>之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。</p>
+
+<p>脚本路径：<a href="https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py">https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py</a></p>
+
+<p></p>
+
+<p>原理</p>
+
+<p>deploy.py 会自动执行 hugo 命令生成静态站点，然后将生成的文件拷贝到上层的一个目录里，然后，在那个目录里将文件 push 到你指定的 Git Repository 里。</p>
+
+<p>使用方法</p>
+
+<pre><code>将 deploy.py 放到你的 Hugo 站点目录。（和 config.yaml 等文件放一起）
+
+编辑 deploy.py 文件，修改你要部署到的 Git Repository：
+
+GIT_REPO = [
+    # [别名,   分支名,     Git Repo 路径]
+    ['origin',  'gh-pages', 'git@github.com:coderzh/hugo-blog-deployed.git'],
+    ['gitcafe', 'gh-pages', 'git@gitcafe.com:coderzh/coderzh-hugo-blog.git'],
+]
+# 部署到哪里，相对上一级目录。比如下面的配置，会部署到 ../gh-pages 目录里
+DEPLOY_DIR = 'gh-pages'
+
+如果你的网站需要指定皮肤，需要在 config 文件中指定 theme 。因为我的脚本在生成静态文件时并不会指定皮肤。
+
+theme: &quot;rapid&quot;
+
+第一次执行，使用 first 参数，它会做一些初始化的操作。并使用 -t 表示只是测试一下，并不会真的 push 。
+
+python deploy.py first -t
+
+中间可能需要输入密码，如果是自动化部署，可在 Git Repo 里添加一个没有密码的 SSH Key 。
+
+如果一切正常，切换到 DEPLOY_DIR 目录，git log 看看 commit 记录是否正常。如果一切也如你所愿。则可以把 -t 参数去掉重新执行一遍，执行真的 push 操作：
+
+python deploy.py first
+
+执行完成后，应该已经将生成的静态页面自动 push 到了你指定的 GIT_REPO 里。
+
+之后如需再次手工部署，只需要使用 manual 参数，速度会快很多：
+
+python deploy.py manual
+
+如果你想通过 webhook 来自动部署，使用 auto 参数，这样在执行 deploy.py 时，会使用 Git 自动更新你当前的 Hugo 站点目录 ，然后部署：
+
+python deploy.py auto
+</code></pre>
+
+<p>That’s all, 祝你好运！</p></article>
+    <footer class="post-footer">
       
-      
+      <ul class="post-tags">
         
-        <a href="/tags/taga/" class="tag-m">taga</a>
-      
+          <li><a href="/tags/hugo"><span class="tag">Hugo</span></a></li>
         
-        <a href="/tags/tagb/" class="tag-m">tagb</a>
-      
+          <li><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC"><span class="tag">自动化部署脚本</span></a></li>
         
-        <a href="/tags/hugo/" class="tag-s">hugo</a>
+      </ul>
       
+      <p class="post-copyright">
         
-        <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/" class="tag-s">自动化部署脚本</a>
+      </p>
+    </footer>
+    
       
-    </div>
+    
   </section>
   <footer class="site-footer">
   <p>© 2017-2018 猪逻辑公园工作室</p>
