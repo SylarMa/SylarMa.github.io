@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://malonghua.com/about/</loc>
+    <lastmod>2018-07-04T08:48:55+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://malonghua.com/post/hugo-auto-deploy/</loc>
     <lastmod>2018-07-03T16:40:57+08:00</lastmod>
   </url>
@@ -54,7 +59,7 @@
   
   <url>
     <loc>http://malonghua.com/</loc>
-    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <lastmod>2018-07-04T08:48:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
