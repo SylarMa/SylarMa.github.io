@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自动化部署脚本 on 猪逻辑公园工作室</title>
-    <link>http://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</link>
+    <link>https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</link>
     <description>Recent content in 自动化部署脚本 on 猪逻辑公园工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <lastBuildDate>Tue, 03 Jul 2018 16:40:57 +0800</lastBuildDate>
     
-	<atom:link href="http://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 自动化部署脚本 deploy.py</title>
-      <link>http://malonghua.com/post/hugo-auto-deploy/</link>
+      <link>https://malonghua.com/post/hugo-auto-deploy/</link>
       <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
       
-      <guid>http://malonghua.com/post/hugo-auto-deploy/</guid>
+      <guid>https://malonghua.com/post/hugo-auto-deploy/</guid>
       <description>&lt;p&gt;以下内容出自大神CoderZh&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;br&gt;&lt;/p&gt;

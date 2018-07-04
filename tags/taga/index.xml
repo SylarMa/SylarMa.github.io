@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Taga on 猪逻辑公园工作室</title>
-    <link>http://malonghua.com/tags/taga/</link>
+    <link>https://malonghua.com/tags/taga/</link>
     <description>Recent content in Taga on 猪逻辑公园工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <lastBuildDate>Tue, 03 Jul 2018 16:39:53 +0800</lastBuildDate>
     
-	<atom:link href="http://malonghua.com/tags/taga/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malonghua.com/tags/taga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello Hugo</title>
-      <link>http://malonghua.com/post/hello-hugo/</link>
+      <link>https://malonghua.com/post/hello-hugo/</link>
       <pubDate>Tue, 03 Jul 2018 16:39:53 +0800</pubDate>
       
-      <guid>http://malonghua.com/post/hello-hugo/</guid>
+      <guid>https://malonghua.com/post/hello-hugo/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>http://malonghua.com/post/hello-world/</link>
+      <link>https://malonghua.com/post/hello-world/</link>
       <pubDate>Tue, 03 Jul 2018 16:36:17 +0800</pubDate>
       
-      <guid>http://malonghua.com/post/hello-world/</guid>
+      <guid>https://malonghua.com/post/hello-world/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
