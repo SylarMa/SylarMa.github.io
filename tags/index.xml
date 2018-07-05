@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 猪逻辑公园工作室</title>
+    <link>https://malonghua.com/tags/</link>
+    <description>Recent content in Tags on 猪逻辑公园工作室</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>utf-8</language>
+    <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
+    <lastBuildDate>Tue, 03 Jul 2018 16:40:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://malonghua.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://malonghua.com/tags/hugo/</link>
+      <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taga</title>
+      <link>https://malonghua.com/tags/taga/</link>
+      <pubDate>Tue, 03 Jul 2018 16:39:53 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/taga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tagb</title>
+      <link>https://malonghua.com/tags/tagb/</link>
+      <pubDate>Tue, 03 Jul 2018 16:39:53 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/tagb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自动化部署脚本</title>
+      <link>https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
