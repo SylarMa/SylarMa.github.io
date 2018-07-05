@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>Webhook Hugo</title>
+      <title>通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages</title>
       <link>https://malonghua.com/post/webhook-hugo/</link>
       <pubDate>Thu, 05 Jul 2018 09:12:51 +0800</pubDate>
       
