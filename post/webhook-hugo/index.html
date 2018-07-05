@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Webhook Hugo</title>
+
+  
+  
+
+
+
+
+
+  
+  <meta name="author" content="CoderZh" />
+  <meta name="description" content="以下内容出自大神CoderZh
+本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。
+
+" />
+
+  
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Webhook Hugo" />
+    <meta name="twitter:description" content="以下内容出自大神CoderZh
+本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。
+
+" />
+    <meta name="twitter:image" content="https://malonghua.com/img/cover.jpg" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Webhook Hugo" />
+  <meta property="og:description" content="以下内容出自大神CoderZh
+本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。
+
+" />
+  <meta property="og:url" content="https://malonghua.com/post/webhook-hugo/" />
+  <meta property="og:image" content="https://malonghua.com/img/cover.jpg" />
+
+
+
+
+<meta name="generator" content="Hugo 0.42.2" />
+
+
+<link rel="canonical" href="https://malonghua.com/post/webhook-hugo/" />
+<link rel="alternative" href="https://malonghua.com/index.xml" title="猪逻辑公园工作室" type="application/atom+xml" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="猪逻辑公园工作室" />
+<meta name="msapplication-tooltip" content="猪逻辑公园工作室" />
+<meta name='msapplication-navbutton-color' content="#5fbf5e" />
+<meta name="msapplication-TileColor" content="#5fbf5e" />
+<meta name="msapplication-TileImage" content="/img/tile-image-windows.png" />
+<link rel="icon" href="https://malonghua.com/img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://malonghua.com/img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://malonghua.com/img/favicon-32x32.png" />
+<link rel="icon" sizes="192x192" href="https://malonghua.com/img/touch-icon-android.png" />
+<link rel="apple-touch-icon" href="https://malonghua.com/img/touch-icon-apple.png" />
+<link rel="mask-icon" href="https://malonghua.com/img/safari-pinned-tab.svg" color="#5fbf5e" />
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.2.8/alt/video-js-cdn.min.css" />
+
+<link rel="stylesheet" href="https://malonghua.com/css/bundle.ff02473a9a.css" />
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/video.js/6.2.8/ie8/videojs-ie8.min.js"></script>
+  <![endif]-->
+
+<!--[if lte IE 11]>
+    <script src="//cdn.bootcss.com/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+
+<script src="//cdn.bootcss.com/object-fit-images/3.2.3/ofi.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/smooth-scroll/12.1.4/js/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      
+        
+        <a title="Go to comments" class="to-comment" href="#disqus_thread"><span class="icon icon-comment"></span></a>
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="https://malonghua.com/img/avatar.jpg" alt="Avatar">
+  
+  <h2 class="title">猪逻辑公园工作室</h2>
+  
+  <p class="subtitle">~ Keep It Simple &amp; Stupid ~</p>
+  <button class="menu-toggle" type="button">
+    <span class="icon icon-menu"></span>
+  </button>
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+            
+            
+            
+              is-active
+            ">
+            <a href="https://malonghua.com/">Home</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/hugo">Hugo</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/">Tags</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/links/">Links</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/about/">About</a>
+          </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list">
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li class="social-item">
+        <a href="https://malonghua.com/index.xml"><span class="icon icon-rss" title="RSS"></span></a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Webhook Hugo</h1>
+      <p class="post-meta">@CoderZh · Jul 5, 2018 · 1 min read</p>
+    </header>
+    <article class="post-content"><p>以下内容出自大神CoderZh</p>
+
+<p>本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。</p>
+
+<p></p>
+
+<p>首先，必须解释一下，为什么需要自动部署，以及为什么需要需要同时部署到GitHub Pages和GitCafe Pages。
+为什么要自动部署</p>
+
+<p>使用Hugo生成的静态页面是在public文件夹里，部署的时候需要把public文件夹里的内容push到GitHub的gh-pages分支里。每次写完文章，除了push markdown格式的文章，还需要单独push生成的public文件夹里的东西，步骤稍显麻烦。</p>
+
+<p>之前参照了官方的做法，使用subtree来push public，步骤简化不少。然而，这还是不够简单。因为每次修改文章之后，必须依赖一个脚本才能正确提交和部署。假如你在手机里浏览时，发现一个错别字，顺手就在GitHub的Web界面就把错别字改了，然而这样并不会重新生成静态页面和部署。有些不方便。</p>
+
+<p>Hugo生成静态页面和部署的过程应该让机器自动来完成。写作应该是一个相对单纯的事情，使用Hugo的人应该更专注于写作。
+为什么需要同时部署到GitHub Pages和GitCafe Pages</p>
+
+<p>大公司很喜欢的一个词：容灾。GitHub出现不可访问的事情在国内也是常有的，而GitCafe作为国内的代码托管厂商，是否是一个稳定的存在也不好说。所以，将网站同时部署到这两个上面。通过DnsPod里CNAME设置线路“国内”和“国外”，不仅起到了任何一个挂掉，另一个可以继续工作的目的，还起到了CDN就近访问的作用。</p>
+
+<p>使用GitCafe还有另外一个原因。GitHub Pages拒绝了一切百度的爬虫，所以，百度无法索引到GitHub Pages的网页。对于国内的搜索市场来说，百度的份额还是比较大的，虽然我认为看我的博客的人都不应该使用百度，但现实总是残酷的。如果希望网站被百度收录，就必须放到GitHub以外的地方。GitCafe就是一种比较好的选择。</p>
+
+<p><a href="http://gitcafe.com">http://gitcafe.com</a></p>
+
+<p>如果，你只是希望使用官方的Hugo自动化部署到GitHub Pages，下面的内容你可以不用看了。你可以直接使用Wercker的服务来自动部署。</p>
+
+<p>文档见： <a href="http://gohugo.io/tutorials/automated-deployments/">http://gohugo.io/tutorials/automated-deployments/</a></p>
+
+<p>由于Wercker还不支持GitCafe的部署，以及我需要使用特定的修改版本的Hugo来生成静态网页，并且希望这些步骤比较可控，所以，还是自己来折腾整个过程吧。
+webhook</p>
+
+<p>webhook是GitHub上提供的Git的一种Hook机制，当代码发生变化时，比如代码被Push到GitHub的Repo时，GitHub会自动请求一个你指定的网页，并且把变更相关的参数都传递过来。入口在Repo的Settings - webhooks &amp; services</p>
+
+<p>webhook</p>
+
+<p>说明文档：<a href="https://developer.github.com/webhooks/">https://developer.github.com/webhooks/</a></p>
+
+<p>借助webhook的机制，我们就可实现当有新的文章Push之后，自动通知远程的一台机器执行一个脚本，脚本的内容就是生成静态页面和Push部署到最终的服务器。</p>
+
+<p>webhook的Server接收webhook通知，然后执行一个脚本。这样的需求太普遍了，以至于完全不需要自己来实现。在GitHub里搜webhook可以搜出来很多。我主要挑选了Go语言的版本。主要有两个：</p>
+
+<pre><code>https://github.com/qiniu/webhook
+https://github.com/adnanh/webhook
+</code></pre>
+
+<p>第一个是七牛写的，代码很简单，用法也很简单。开始打算用七牛的版本。最后调试的时候发现json解析失败，完全不可用啊！有点坑爹。于是换成了第二个，这个Repo有200多个Star。还是靠谱很多，最后部署，调试，非常顺利。</p>
+
+<p>用法也很简单，首先安装webhook：</p>
+
+<p>$ go get github.com/adnanh/webhook</p>
+
+<p>写一个配置文件hooks.json，里面指定需要执行的脚本：</p>
+
+<p>[
+  {
+    &ldquo;id&rdquo;: &ldquo;redeploy-webhook&rdquo;,
+    &ldquo;execute-command&rdquo;: &ldquo;/var/scripts/redeploy.sh&rdquo;,
+    &ldquo;command-working-directory&rdquo;: &ldquo;/var/webhook&rdquo;
+  }
+]</p>
+
+<p>指定端口启动：</p>
+
+<p>$ /path/to/webhook -hooks hooks.json -port=9876 -verbose</p>
+
+<p>然后它将接受webhook地址：（把它填到GitHub里的webhook里）</p>
+
+<p><a href="http://yourserver:9876/hooks/redeploy-webhook">http://yourserver:9876/hooks/redeploy-webhook</a></p>
+
+<p>自动部署</p>
+
+<p>AutoDeploy</p>
+
+<p>大致的流程如上图。上图的DigitalOcean是一台VPS服务器，我用了很长时间了，速度和稳定性都不错。需要的同学使用这个链接购买，可以获得10美元的优惠：<a href="https://www.digitalocean.com/?refcode=e131e2bba197">https://www.digitalocean.com/?refcode=e131e2bba197</a></p>
+
+<p>整个流程中，复杂度主要是在DigitalOcean的VPS上部署服务和脚本。</p>
+
+<p>部署的脚本可以在我的GitHub上看到：<a href="https://github.com/coderzh/coderzh-hugo-blog">https://github.com/coderzh/coderzh-hugo-blog</a></p>
+
+<p>需要的同学可以参考下，代码见：deploy.py</p>
+
+<p>deploy.py放到你的主工程，也就是你写markdown的Repo下。比如：/var/coderzh-hugo-blog/下</p>
+
+<p>adnanh-webhook的配置文件：</p>
+
+<p>[
+  {
+    &ldquo;id&rdquo;: &ldquo;hugo-deploy&rdquo;,
+    &ldquo;execute-command&rdquo;: &ldquo;/var/webhook/hugo-deploy.sh&rdquo;
+  }
+]</p>
+
+<p>hugo-deploy.sh里执行deploy.py：</p>
+
+<p>#!/bin/bash</p>
+
+<p>python /var/coderzh-hugo-blog/deploy.py &ndash;auto</p>
+
+<p>剩下的是怎么在DigitalOcean的VPS上把这套东西部署起来。我使用nginx + supervisor搭建webhook的Server。</p>
+
+<p>关于nginx和supervisor可以参考之前的一篇文章：<a href="http://blog.coderzh.com/2014/05/19/digitalocean/">http://blog.coderzh.com/2014/05/19/digitalocean/</a></p>
+
+<p>supervisor的配置如下：</p>
+
+<p>[program:webhook]
+command=/root/gocode/bin/webhook -hooks /var/webhook/hooks.json -verbose -port=9876
+user=root
+directory=/var/webhook
+autorestart=true
+redirect_stderr=true
+environment=HOME=&ldquo;/root&rdquo;,USER=&ldquo;root&rdquo;</p>
+
+<p>关于VPS上SSH Key的设置，见：<a href="https://help.github.com/articles/generating-ssh-keys/">https://help.github.com/articles/generating-ssh-keys/</a> 为了自动部署方便，可以不设置密码。</p>
+
+<p>当然，还有个大前提，在VPS上安装最新版本的golang。推荐使用gvm来安装。（记得安装1.5之前必须先把1.4先装上）</p>
+
+<p>golang 安装：</p>
+
+<p>bash &lt; &lt;(curl -s -S -L <a href="https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer">https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer</a>)
+source ~/.bashrc
+gvm version
+gvm install go1.4
+gvm install go1.5.1
+gvm use go1.5.1 &ndash;default
+go version</p>
+
+<p>最后，Good Luck！</p></article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li><a href="https://malonghua.com/tags/hugo"><span class="tag">Hugo</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/webhook"><span class="tag">Webhook</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/github"><span class="tag">GitHub</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/gitcafe"><span class="tag">GitCafe</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC"><span class="tag">自动化部署脚本</span></a></li>
+        
+      </ul>
+      
+      <p class="post-copyright">
+        © This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.
+      </p>
+    </footer>
+    
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "disqus_shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+    
+  </section>
+  <footer class="site-footer">
+  <p>© 2017-2018 猪逻辑公园工作室</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  
+    <p><a href="http://www.miitbeian.gov.cn" title="Check ICP info" target="_blank">冀ICP备14015342号-4</a></p>
+  
+</footer>
+
+
+
+<script async src="//cdn.bootcss.com/video.js/6.2.8/alt/video.novtt.min.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+<script src="https://malonghua.com/js/bundle.d1288006cf.js"></script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXXXXX-X', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+  </body>
+</html>

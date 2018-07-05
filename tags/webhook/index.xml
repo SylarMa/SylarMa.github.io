@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on 猪逻辑公园工作室</title>
-    <link>https://malonghua.com/tags/hugo/</link>
-    <description>Recent content in Hugo on 猪逻辑公园工作室</description>
+    <title>Webhook on 猪逻辑公园工作室</title>
+    <link>https://malonghua.com/tags/webhook/</link>
+    <description>Recent content in Webhook on 猪逻辑公园工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
     <lastBuildDate>Thu, 05 Jul 2018 09:12:51 +0800</lastBuildDate>
     
-	<atom:link href="https://malonghua.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malonghua.com/tags/webhook/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,21 +21,6 @@
       <description>&lt;p&gt;以下内容出自大神CoderZh&lt;/p&gt;
 
 &lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 自动化部署脚本 deploy.py</title>
-      <link>https://malonghua.com/post/hugo-auto-deploy/</link>
-      <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
-      
-      <guid>https://malonghua.com/post/hugo-auto-deploy/</guid>
-      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

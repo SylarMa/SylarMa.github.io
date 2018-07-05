@@ -31,6 +31,19 @@
     </item>
     
     <item>
+      <title>Webhook Hugo</title>
+      <link>https://malonghua.com/post/webhook-hugo/</link>
+      <pubDate>Thu, 05 Jul 2018 09:12:51 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/webhook-hugo/</guid>
+      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;/p&gt;
+
+&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugo 自动化部署脚本 deploy.py</title>
       <link>https://malonghua.com/post/hugo-auto-deploy/</link>
       <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>

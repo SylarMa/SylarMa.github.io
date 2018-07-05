@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/post/webhook-hugo/</loc>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/post/hugo-auto-deploy/</loc>
     <lastmod>2018-07-03T16:40:57+08:00</lastmod>
   </url>
@@ -33,14 +38,26 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/tags/gitcafe/</loc>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malonghua.com/tags/github/</loc>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/tags/hugo/</loc>
-    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://malonghua.com/post/</loc>
-    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,7 +75,13 @@
   
   <url>
     <loc>https://malonghua.com/tags/</loc>
-    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malonghua.com/tags/webhook/</loc>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,7 +93,7 @@
   
   <url>
     <loc>https://malonghua.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2018-07-03T16:40:57+08:00</lastmod>
+    <lastmod>2018-07-05T09:12:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
