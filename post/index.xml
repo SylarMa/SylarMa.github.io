@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 猪逻辑公园工作室</title>
+    <link>https://malonghua.com/post/</link>
+    <description>Recent content in Posts on 猪逻辑公园工作室</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>utf-8</language>
+    <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
+    <lastBuildDate>Sat, 07 Jul 2018 11:25:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://malonghua.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在 Linux 中怎么使用 cron 计划任务</title>
+      <link>https://malonghua.com/post/linux-cron/</link>
+      <pubDate>Sat, 07 Jul 2018 11:25:15 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/linux-cron/</guid>
+      <description>&lt;p&gt;没有时间运行命令？使用 cron 的计划任务意味着你不用熬夜程序也可以运行。&lt;/p&gt;
+
+&lt;p&gt;系统管理员（在许多好处中）的挑战之一是在你该睡觉的时候去运行一些任务。例如，一些任务（包括定期循环运行的任务）需要在没有人使用计算机资源的时候去运行，如午夜或周末。在下班后，我没有时间去运行命令或脚本。而且，我也不想在晚上去启动备份或重大更新。&lt;/p&gt;
+
+&lt;p&gt;取而代之的是，我使用两个服务功能在我预定的时间去运行命令、程序和任务。cron 和 at 服务允许系统管理员去安排任务运行在未来的某个特定时间。at 服务指定在某个时间去运行一次任务。cron 服务可以安排任务在一个周期上重复，比如天、周、或月。&lt;/p&gt;
+
+&lt;p&gt;在这篇文章中，我将介绍 cron 服务和怎么去使用它。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages</title>
+      <link>https://malonghua.com/post/webhook-hugo/</link>
+      <pubDate>Thu, 05 Jul 2018 09:12:51 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/webhook-hugo/</guid>
+      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;/p&gt;
+
+&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo 自动化部署脚本 deploy.py</title>
+      <link>https://malonghua.com/post/hugo-auto-deploy/</link>
+      <pubDate>Tue, 03 Jul 2018 16:40:57 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/hugo-auto-deploy/</guid>
+      <description>&lt;p&gt;以下内容出自大神CoderZh&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo</title>
+      <link>https://malonghua.com/post/hello-hugo/</link>
+      <pubDate>Tue, 03 Jul 2018 16:39:53 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/hello-hugo/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://malonghua.com/post/hello-world/</link>
+      <pubDate>Fri, 11 Feb 2011 00:00:01 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/hello-world/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
