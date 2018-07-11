@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
-    <lastBuildDate>Sat, 07 Jul 2018 11:25:15 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jul 2018 09:48:49 +0800</lastBuildDate>
     
 	<atom:link href="https://malonghua.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New</title>
+      <link>https://malonghua.com/post/new/</link>
+      <pubDate>Wed, 11 Jul 2018 09:48:49 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/new/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>在 Linux 中怎么使用 cron 计划任务</title>

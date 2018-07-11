@@ -31,6 +31,17 @@
     </item>
     
     <item>
+      <title>New</title>
+      <link>https://malonghua.com/post/new/</link>
+      <pubDate>Wed, 11 Jul 2018 09:48:49 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/new/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>在 Linux 中怎么使用 cron 计划任务</title>
       <link>https://malonghua.com/post/linux-cron/</link>
       <pubDate>Sat, 07 Jul 2018 11:25:15 +0800</pubDate>

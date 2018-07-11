@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/post/new/</loc>
+    <lastmod>2018-07-11T09:48:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/post/linux-cron/</loc>
     <lastmod>2018-07-07T11:25:15+08:00</lastmod>
   </url>
@@ -74,19 +79,19 @@
   
   <url>
     <loc>https://malonghua.com/post/</loc>
-    <lastmod>2018-07-07T11:25:15+08:00</lastmod>
+    <lastmod>2018-07-11T09:48:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://malonghua.com/tags/taga/</loc>
-    <lastmod>2018-07-03T16:39:53+08:00</lastmod>
+    <lastmod>2018-07-11T09:48:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://malonghua.com/tags/tagb/</loc>
-    <lastmod>2018-07-03T16:39:53+08:00</lastmod>
+    <lastmod>2018-07-11T09:48:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
