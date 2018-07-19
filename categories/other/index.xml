@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on 猪逻辑公园工作室</title>
+    <link>https://malonghua.com/categories/other/</link>
+    <description>Recent content in Other on 猪逻辑公园工作室</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>utf-8</language>
+    <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
+    <lastBuildDate>Thu, 19 Jul 2018 08:01:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://malonghua.com/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cisco VPN client在win10下使用以及安装Error 27850与连接Reason 442错误解决</title>
+      <link>https://malonghua.com/post/win10-cisco-vpn-client/</link>
+      <pubDate>Thu, 19 Jul 2018 08:01:02 +0800</pubDate>
+      
+      <guid>https://malonghua.com/post/win10-cisco-vpn-client/</guid>
+      <description>&lt;p&gt;使用教程:
+Cisco Systems VPN Client -&amp;gt; VPN Client”来启动VPN客户端。
+1,点击工具条上的“New”按钮来新建一个VPN连接。
+2,这时会出来VPN客户端创建新VPN连接入口的界面，
+“Connection Entry”填入VPN连接的名称（随便填写，如“中国计量学院”）；
+“Description”可以填写对本连接的描述，也可以不填写；
+“Host”填写VPN服务的接入地址：“vpn.cjlu.edu.cn”。
+  在下面的“Authentication”，选择“Group Authentication”，
+  在“Name”里填写公钥名：“vpn3000”，
+“Password”填写密码：“cisco”，
+“Confirm Password”里再次输入密码进行确认：“cisco”。
+  然后点击“Save”保存。&lt;/p&gt;
+
+&lt;p&gt;3,回到VPN Client主界面，这里已经出现了刚才新建的VPN连接，
+  你可以选中该连接后点击工具条上的“Connect”进行连接，在主界面的状态栏会出现正在连接的状态。
+  公钥和密码通过验证之后会出现本连接的VPN用户验证对话框，
+  在“Username”和“Password”填写你的综合服务帐号用户名和密码，
+  点击“OK”进行身份验证。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

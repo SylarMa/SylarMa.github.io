@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Cisco VPN client在win10下使用以及安装Error 27850与连接Reason 442错误解决</title>
+
+  
+  
+
+
+
+
+
+  
+  <meta name="author" content="Sylar Ma" />
+  <meta name="description" content="使用教程: Cisco Systems VPN Client -&amp;gt; VPN Client”来启动VPN客户端。 1,点击工具条上的“New”按钮来新建一个VPN连接。 2,这时会出来VPN客户端创建新VPN连接入口的界面， “Connection Entry”填入VPN连接的名称（随便填写，如“中国计量学院”）； “Description”可以填写对本连接的描述，也可以不填写； “Host”填写VPN服务的接入地址：“vpn.cjlu.edu.cn”。 在下面的“Authentication”，选择“Group Authentication”， 在“Name”里填写公钥名：“vpn3000”， “Password”填写密码：“cisco”， “Confirm Password”里再次输入密码进行确认：“cisco”。 然后点击“Save”保存。
+3,回到VPN Client主界面，这里已经出现了刚才新建的VPN连接， 你可以选中该连接后点击工具条上的“Connect”进行连接，在主界面的状态栏会出现正在连接的状态。 公钥和密码通过验证之后会出现本连接的VPN用户验证对话框， 在“Username”和“Password”填写你的综合服务帐号用户名和密码， 点击“OK”进行身份验证。
+
+" />
+
+  
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Cisco VPN client在win10下使用以及安装Error 27850与连接Reason 442错误解决" />
+    <meta name="twitter:description" content="使用教程: Cisco Systems VPN Client -&amp;gt; VPN Client”来启动VPN客户端。 1,点击工具条上的“New”按钮来新建一个VPN连接。 2,这时会出来VPN客户端创建新VPN连接入口的界面， “Connection Entry”填入VPN连接的名称（随便填写，如“中国计量学院”）； “Description”可以填写对本连接的描述，也可以不填写； “Host”填写VPN服务的接入地址：“vpn.cjlu.edu.cn”。 在下面的“Authentication”，选择“Group Authentication”， 在“Name”里填写公钥名：“vpn3000”， “Password”填写密码：“cisco”， “Confirm Password”里再次输入密码进行确认：“cisco”。 然后点击“Save”保存。
+3,回到VPN Client主界面，这里已经出现了刚才新建的VPN连接， 你可以选中该连接后点击工具条上的“Connect”进行连接，在主界面的状态栏会出现正在连接的状态。 公钥和密码通过验证之后会出现本连接的VPN用户验证对话框， 在“Username”和“Password”填写你的综合服务帐号用户名和密码， 点击“OK”进行身份验证。
+
+" />
+    <meta name="twitter:image" content="https://malonghua.com/img/cover.jpg" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cisco VPN client在win10下使用以及安装Error 27850与连接Reason 442错误解决" />
+  <meta property="og:description" content="使用教程: Cisco Systems VPN Client -&amp;gt; VPN Client”来启动VPN客户端。 1,点击工具条上的“New”按钮来新建一个VPN连接。 2,这时会出来VPN客户端创建新VPN连接入口的界面， “Connection Entry”填入VPN连接的名称（随便填写，如“中国计量学院”）； “Description”可以填写对本连接的描述，也可以不填写； “Host”填写VPN服务的接入地址：“vpn.cjlu.edu.cn”。 在下面的“Authentication”，选择“Group Authentication”， 在“Name”里填写公钥名：“vpn3000”， “Password”填写密码：“cisco”， “Confirm Password”里再次输入密码进行确认：“cisco”。 然后点击“Save”保存。
+3,回到VPN Client主界面，这里已经出现了刚才新建的VPN连接， 你可以选中该连接后点击工具条上的“Connect”进行连接，在主界面的状态栏会出现正在连接的状态。 公钥和密码通过验证之后会出现本连接的VPN用户验证对话框， 在“Username”和“Password”填写你的综合服务帐号用户名和密码， 点击“OK”进行身份验证。
+
+" />
+  <meta property="og:url" content="https://malonghua.com/post/win10-cisco-vpn-client/" />
+  <meta property="og:image" content="https://malonghua.com/img/cover.jpg" />
+
+
+
+
+<meta name="generator" content="Hugo 0.42.2" />
+
+
+<link rel="canonical" href="https://malonghua.com/post/win10-cisco-vpn-client/" />
+<link rel="alternative" href="https://malonghua.com/index.xml" title="猪逻辑公园工作室" type="application/atom+xml" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="猪逻辑公园工作室" />
+<meta name="msapplication-tooltip" content="猪逻辑公园工作室" />
+<meta name='msapplication-navbutton-color' content="#5fbf5e" />
+<meta name="msapplication-TileColor" content="#5fbf5e" />
+<meta name="msapplication-TileImage" content="/img/tile-image-windows.png" />
+<link rel="icon" href="https://malonghua.com/img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://malonghua.com/img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://malonghua.com/img/favicon-32x32.png" />
+<link rel="icon" sizes="192x192" href="https://malonghua.com/img/touch-icon-android.png" />
+<link rel="apple-touch-icon" href="https://malonghua.com/img/touch-icon-apple.png" />
+<link rel="mask-icon" href="https://malonghua.com/img/safari-pinned-tab.svg" color="#5fbf5e" />
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.2.8/alt/video-js-cdn.min.css" />
+
+<link rel="stylesheet" href="https://malonghua.com/css/bundle.ff02473a9a.css" />
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/video.js/6.2.8/ie8/videojs-ie8.min.js"></script>
+  <![endif]-->
+
+<!--[if lte IE 11]>
+    <script src="//cdn.bootcss.com/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+
+<script src="//cdn.bootcss.com/object-fit-images/3.2.3/ofi.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/smooth-scroll/12.1.4/js/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="https://malonghua.com/img/avatar.jpg" alt="Avatar">
+  
+  <h2 class="title">猪逻辑公园工作室</h2>
+  
+  <p class="subtitle">~ Keep It Simple &amp; Stupid ~</p>
+  <button class="menu-toggle" type="button">
+    <span class="icon icon-menu"></span>
+  </button>
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+            
+            
+            
+              is-active
+            ">
+            <a href="https://malonghua.com/">Home</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/hugo/">Hugo</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/linux/">Linux</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/other/">Other</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/tags/">Tags</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/links/">Links</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="https://malonghua.com/about/">About</a>
+          </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list">
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li class="social-item">
+        <a href="https://malonghua.com/index.xml"><span class="icon icon-rss" title="RSS"></span></a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Cisco VPN client在win10下使用以及安装Error 27850与连接Reason 442错误解决</h1>
+      <p class="post-meta">@Sylar Ma · Jul 19, 2018 · 1 min read</p>
+    </header>
+    <article class="post-content"><p>使用教程:
+Cisco Systems VPN Client -&gt; VPN Client”来启动VPN客户端。
+1,点击工具条上的“New”按钮来新建一个VPN连接。
+2,这时会出来VPN客户端创建新VPN连接入口的界面，
+“Connection Entry”填入VPN连接的名称（随便填写，如“中国计量学院”）；
+“Description”可以填写对本连接的描述，也可以不填写；
+“Host”填写VPN服务的接入地址：“vpn.cjlu.edu.cn”。
+  在下面的“Authentication”，选择“Group Authentication”，
+  在“Name”里填写公钥名：“vpn3000”，
+“Password”填写密码：“cisco”，
+“Confirm Password”里再次输入密码进行确认：“cisco”。
+  然后点击“Save”保存。</p>
+
+<p>3,回到VPN Client主界面，这里已经出现了刚才新建的VPN连接，
+  你可以选中该连接后点击工具条上的“Connect”进行连接，在主界面的状态栏会出现正在连接的状态。
+  公钥和密码通过验证之后会出现本连接的VPN用户验证对话框，
+  在“Username”和“Password”填写你的综合服务帐号用户名和密码，
+  点击“OK”进行身份验证。</p>
+
+<p></p>
+
+<p>我在win10下安装Cisco VPN client过程中遇到的几个问题.</p>
+
+<p>问题1:</p>
+
+<p>问题描述： WIN10系统安装VPN Client时，出现报错信息：</p>
+
+<p>installing Cisco VPN client -Error 27850. Unable to manage networking component. Operating system corruption may be preventing installation</p>
+
+<p>解决办法：</p>
+
+<p>1.下载VPN_Win10_ByDuke，这个文件中有两个应用：winfix.exe  和 dneupdate64.msi</p>
+
+<p>下载地址:<a href="http://download.csdn.net/detail/u010921682/9857618">http://download.csdn.net/detail/u010921682/9857618</a></p>
+
+<p>2.先点击winfix.exe安装完成后，重启电脑；</p>
+
+<p>3.再点击dneupdate64.msi 更新。</p>
+
+<p>4.最后在安装VPN Client ， 即可成功</p>
+
+<p>问题2:
+在使用cisco VPN 客户端登录时，产生Reason 442：Failedto enable Virtual Adapter 错误，导致无法正常登录VPN客户端。</p>
+
+<p>[WIN8 / 10解决方案]</p>
+
+<p>修改注册表</p>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CVirtA<br />
+将DisplayName的值去掉 @oemX.inf,%CVirtA_Desc%; 即把DisplayName设置为：Cisco Systems VPN     Adapter for 64-bit Windows</p>
+
+<p>WINDOWS服务</p>
+
+<p>Internet Connection Sharing (ICS)、Interactive Services Detection在正在运行状态，需要将服务停止并重启Cisco Systems, Inc. VPN Service服务.</p></article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li><a href="https://malonghua.com/tags/other"><span class="tag">Other</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/win10"><span class="tag">Win10</span></a></li>
+        
+          <li><a href="https://malonghua.com/tags/cisco-vpn-client"><span class="tag">Cisco VPN Client</span></a></li>
+        
+      </ul>
+      
+      <p class="post-copyright">
+        © This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  <footer class="site-footer">
+  <p>© 2017-2018 猪逻辑公园工作室</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  
+    <p><a href="http://www.miitbeian.gov.cn" title="Check ICP info" target="_blank">冀ICP备14015342号-4</a></p>
+  
+</footer>
+
+
+
+<script async src="//cdn.bootcss.com/video.js/6.2.8/alt/video.novtt.min.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+<script src="https://malonghua.com/js/bundle.d1288006cf.js"></script>
+
+
+
+
+  </body>
+</html>

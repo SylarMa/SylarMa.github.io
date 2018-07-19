@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
-    <lastBuildDate>Sat, 07 Jul 2018 11:25:15 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 08:01:02 +0800</lastBuildDate>
     
 	<atom:link href="https://malonghua.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cisco Vpn Client</title>
+      <link>https://malonghua.com/tags/cisco-vpn-client/</link>
+      <pubDate>Thu, 19 Jul 2018 08:01:02 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/cisco-vpn-client/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cron</title>
@@ -58,6 +67,15 @@
     </item>
     
     <item>
+      <title>Other</title>
+      <link>https://malonghua.com/tags/other/</link>
+      <pubDate>Thu, 19 Jul 2018 08:01:02 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Taga</title>
       <link>https://malonghua.com/tags/taga/</link>
       <pubDate>Wed, 11 Jul 2018 09:48:49 +0800</pubDate>
@@ -81,6 +99,15 @@
       <pubDate>Thu, 05 Jul 2018 09:12:51 +0800</pubDate>
       
       <guid>https://malonghua.com/tags/webhook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Win10</title>
+      <link>https://malonghua.com/tags/win10/</link>
+      <pubDate>Thu, 19 Jul 2018 08:01:02 +0800</pubDate>
+      
+      <guid>https://malonghua.com/tags/win10/</guid>
       <description></description>
     </item>
     

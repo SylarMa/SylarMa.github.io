@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/post/win10-cisco-vpn-client/</loc>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/post/new/</loc>
     <lastmod>2018-07-11T09:48:49+08:00</lastmod>
   </url>
@@ -48,6 +53,12 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/tags/cisco-vpn-client/</loc>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/tags/cron/</loc>
     <lastmod>2018-07-07T11:25:15+08:00</lastmod>
     <priority>0</priority>
@@ -78,8 +89,20 @@
   </url>
   
   <url>
+    <loc>https://malonghua.com/tags/other/</loc>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malonghua.com/categories/other/</loc>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://malonghua.com/post/</loc>
-    <lastmod>2018-07-11T09:48:49+08:00</lastmod>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -97,13 +120,19 @@
   
   <url>
     <loc>https://malonghua.com/tags/</loc>
-    <lastmod>2018-07-07T11:25:15+08:00</lastmod>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://malonghua.com/tags/webhook/</loc>
     <lastmod>2018-07-05T09:12:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malonghua.com/tags/win10/</loc>
+    <lastmod>2018-07-19T08:01:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
