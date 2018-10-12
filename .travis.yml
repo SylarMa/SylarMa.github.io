@@ -1,0 +1,21 @@
+language: go
+
+install: go get -v github.com/gohugoio/hugo
+
+script:
+    - hugo
+    
+deploy:
+    - cd ./public
+    - git config user.name "SylarMa" # username替换为你的git username
+    - git config user.email "sylarblog@126.com" # email替换为你的coding邮箱
+    - git init
+    - git add .
+    - git commit -m "Travis-CI 自动部署"
+    # Coding Pages
+    - git push --force "https://SylarMa:${CO_TOKEN}@${CO_REF}" master:master # username替换为你的coding用户名
+
+env:
+    global:
+        # Coding Pages
+        - CO_REF: git.coding.net/SylarMa/SylarMa.github.io.git # 这里填入你的coding pages仓库地址 例如：git.coding.net/username/hugo.git    
