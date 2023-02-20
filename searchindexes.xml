@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Archives</title><url>/archives/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>Flinks</title><url>/flinks/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>About</title><url>/about/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>Win+Hugo+Github小白手把手搭建个人博客</title><url>/post/win-hugo-github/</url><categories><category>Hugo</category></categories><tags><tag>Hugo</tag><tag>Github</tag></tags><content type="html"><![CDATA[前言 如果你想创建一个网站，又不想太麻烦，那Hugo是个不错的选择，简单，轻盈。
+安装Hugo 下载安装包下载地址 https://github.com/gohugoio/hugo/releases本文使用的是Windows电脑，选择的extended版本。
+解压、点击安装后，将hugo路径添加到系统环境变量PATH中。
+在任意文件进入cmd模式，输入hugo version。
+如果正常返回版本信息，表明已经成功安装。
+如不正常返回，可将hugo.exe放在C:\Windows\System32下。
+安装Git hugo的操作都是命令行式，建议使用Git，可以到官网下载最新Win版本，因为下载主题还要用到git clone。
+新建站点 cmd模式，进入test文件夹
+hugo new site myblog 会新建一个 myblog 的文件夹
+ls ./myblog archetypes/ config.toml content/ data/
+layouts/ static/ themes/ 我目前了解如下 config.toml 进行参数配置，与之后的theme相关 content 之后博客(.md)的文件都储存在这里 layout 可个性化修改博客的展示细节，需要懂网络架构知识 static 储存一些静态文件，比如本地图片，插入到博客中 themes 主题，接下来会介绍
+下载主题 我用的是hugo-theme-next主题。
+如果你是初次建站的话，可以使用 Github 的模板功能，一键生成你的站点仓库代码。 访问 hugo-theme-next-starter点击右上角的 Use this template 绿色按钮然后填写代码仓库的相关信息，参考如下： 最后点击 Create repository from template 绿色按钮，会直接在你的空间中生成站点代码，再把它克隆到本地根目录进行创作。
+git clone https://
+记得首次完全克隆后，需要在根目录中使用如下的 Git 子模块更新命令拉取 hugo-theme-next 主题的最新版本。
+首次初始化操作 $ git submodule update &ndash;init &ndash;recursive 后续更新操作 $ git submodule update &ndash;remote
+如果你已经有站点，可通过 submodule 模式引用本主题，参考如下命令： $ cd hugo-next-exmaple $ git submodule add https://github.com/hugo-next/hugo-theme-next.gitthemes/hugo-theme-next $ cp themes/hugo-theme-next/exampleSite/config.yaml . $ mv config.toml config.toml.backup
+本地预览 在站点根目录下，执行自带的 startup.sh 启动脚本，当看到输出信息中带有 stop 字样时便表示启动成功，此时打开浏览器输入默认地址http://localhost:1414/ 访问实时浏览效果。
+修改配置 修改 myblog\config_default下的config.yaml中的重要参数，其它参数可针对性修改。
+baseURL: https://www.*****.cn #绑定的域名 theme: PaperMod # 主题名字，和themes文件夹下的一致
+新建文章 hugo new post/helloworld.md
+测试博客 hugo server 访问http://localhost:1313 查看
+部署Github 1、需要先在个人的github账号中创建*.github.io 仓库
+2、将当前博客内容编译为html，放到public文件夹
+首先需要记得修改 config.yaml文件的 baseURL参数设置为你想要绑定的域名 baseURL: https://www.username.github.io然后使用hugo编译 hugo hugo -F &ndash;cleanDestinationDir 加了上述参数表示表示每次生成的public都是全新的，会覆盖原来的。
+ls ./public 404.html assets/ categories/ index.html index.xml
+page/ posts/ sitemap.xml tags/
+3、使用git将public文件夹的内容上传到github.io仓库
+cd public/ (1)第一次上传 git init git add . #添加当前路径的所有文件 git commit -m &lsquo;create blog&rsquo; git remote add origin https://github.com/username/username.github.io.git根据gitbash提示操作 git push -u origin master
+如果push失败，比如time out&hellip;可尝试下面的命令 git config &ndash;global http.sslVerify &ldquo;false&rdquo; git config &ndash;global &ndash;unset http.proxy git config &ndash;global &ndash;unset https.proxy
+(2)之后再修改、更新博客 根目录下 hugo cd public/ git add . git commit -m &lsquo;add blogs&rsquo; git push -u origin master
+如上操作后，理论上再访问 https://username.github.io/就是一个博客的页面了。
+当第一次操作时总会遇到各种各样的问题，比如我自己。就是不断尝试、报错、再修改过程。
+]]></content></entry><entry><title>Hello World</title><url>/post/hello-world/</url><categories><category>Hugo</category></categories><tags><tag>Hello World</tag><tag>Hello Hugo</tag></tags><content type="html">Hello World!
+Hello Hugo!</content></entry></search>
