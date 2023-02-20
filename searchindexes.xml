@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Archives</title><url>/archives/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>Flinks</title><url>/flinks/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>About</title><url>/about/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>Win+Hugo+Github小白手把手搭建个人博客</title><url>/post/win-hugo-github/</url><categories><category>Hugo</category></categories><tags><tag>Hugo</tag><tag>Github</tag></tags><content type="html"><![CDATA[前言 如果你想创建一个网站，又不想太麻烦，那Hugo是个不错的选择，简单，轻盈。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Waline国内用户设置方法</title><url>/post/waline/</url><categories><category>Hugo</category></categories><tags><tag>Hugo</tag><tag>Waline</tag></tags><content type="html"><![CDATA[基本说明 该文章为国际版设置教程。
+准备Waline https://waline.js.org/guide/get-started/欢迎使用 Waline，只需几个步骤，你就可以在你的网站中启用 Waline 提供评论与浏览量服务。
+LeanCloud 设置 (数据库) 1）、登录或 注册LeanCloud 国际版 并进入 控制台2）、点击左上角 创建应用并起一个你喜欢的名字 (请选择免费的开发版):
+3）、进入应用，选择左下角的 设置 &gt; 应用 Key。你可以看到你的 APP ID,APP Key 和 Master Key。请记录它们，以便后续使用。
+国内版需要完成备案接入 如果你正在使用 Leancloud 国内版 (leancloud.cn)，我们推荐你切换到国际版 (leancloud.app)。否则，你需要为应用额外绑定已备案的域名，同时购买独立 IP 并完成备案接入:
+登录国内版并进入需要使用的应用 选择 设置 &gt; 域名绑定 &gt; API 访问域名 &gt; 绑定新域名 &gt; 输入域名 &gt; 确定。 按照页面上的提示按要求在 DNS 上完成 CNAME 解析。 购买独立 IP 并提交工单完成备案接入。(独立 IP 目前价格为 ￥ 50/个/月)
+Vercel 部署 (服务端) 登录Vercel，跳转至 Vercel 进行 Server 端部署。
+1）、如果你未登录的话，Vercel 会让你注册或登录，请使用 GitHub 账户进行快捷登录。
+2）、输入一个你喜欢的 Vercel 项目名称并点击 Create 继续:
+3）、此时 Vercel 会基于 Waline 模板帮助你新建并初始化仓库，仓库名为你之前输入的项目名。几分钟后，满屏的烟花会庆祝你部署成功。此时点击 Go to Dashboard 可以跳转到应用的控制台。
+4）、点击顶部的 Settings - Environment Variables 进入环境变量配置页，并配置三个环境变量 LEAN_ID, LEAN_KEY 和 LEAN_MASTER_KEY 。它们的值分别对应上一步在 LeanCloud 中获得的 APP ID, APP KEY, Master Key，Environment下的Production、Preview、Development全部选中，如果你使用 LeanCloud 国内版，请额外配置 LEAN_SERVER 环境变量，值为你绑定好的域名。点击顶部的 Settings - Domains 进入域名配置页，输入需要绑定的域名并点击 Add，在域名服务器商处添加新的 CNAME 解析记录，等待生效，你可以通过自己的域名来访问了。
+5）、环境变量配置完成之后点击顶部的 Deployments 点击顶部最新的一次部署右侧的 Redeploy 按钮进行重新部署。该步骤是为了让刚才设置的环境变量生效。
+6）、此时会跳转到 Overview 界面开始部署，等待片刻后 STATUS 会变成 Ready。此时请点击 Visit ，即可跳转到部署好的网站地址，此地址即为你的服务端地址。
+本来到这里就该配置客户端正常使用了，但是vercel.app 域名遭受 DNS 污染攻击，在国内无法直接访问此域名，接着看下面的配置吧！
+国内访问vercel Waline 官方提供的免费部署方案，vercel.app 域名遭受 DNS 污染攻击，在国内无法直接访问此域名，导致众多 Waline 用户的服务直接陷入“宕机”状态，真可谓是雪上加霜。
+遇到问题解决问题
+方案1： 有备案可用域名，直接转发Vercel DNS Server地址 方案2： 申请免费域名，配置 Vercel 提供的 DNS 服务器
+方案1 DNS Server转发
+在自有域名的DNS服务中添加一条记录，选择CNAME类型转发，记录值填写为：cname.vercel-dns.com，然后在Vercel中找到Waline后端服务的项目，点击Settings标签卡，跳转页面后点击左侧的Domains菜单项，输入你自己定义的域名点击Add按钮即可。
+方案2 申请免费域名，不过这里不需要借助 DNSPOD 提供的解析服务，所以在申请域名时可以直接填写 Vercel 提供的 DNS 服务，默认地址为ns1.vercel-dns.com、ns2.vercel-dns.com，域名申请下来后，访问 Vercel 的域名控制面板 Domains Dashboard 点击右上角的Add按钮选择你的 Waline 项目点击Continue按钮，再输入申请好的域名确认即可。
+创建属于你自己的org永久域名 ]]></content></entry><entry><title>Flinks</title><url>/flinks/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>About</title><url>/about/</url><categories><category><no value=/></categories><tags><tag><no value=/><tag><no value=/></tags><content type="html"></content></entry><entry><title>Win+Hugo+Github小白手把手搭建个人博客</title><url>/post/win-hugo-github/</url><categories><category>Hugo</category></categories><tags><tag>Hugo</tag><tag>Github</tag></tags><content type="html"><![CDATA[前言 如果你想创建一个网站，又不想太麻烦，那Hugo是个不错的选择，简单，轻盈。
 安装Hugo 下载安装包下载地址 https://github.com/gohugoio/hugo/releases本文使用的是Windows电脑，选择的extended版本。
 解压、点击安装后，将hugo路径添加到系统环境变量PATH中。
 在任意文件进入cmd模式，输入hugo version。
