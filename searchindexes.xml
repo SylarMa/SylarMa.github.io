@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown常用语法介绍</title><url>/post/markdown.html</url><categories><category>Hugo</category></categories><tags><tag>Markdown</tag><tag>常用语法</tag></tags><content type="html"><![CDATA[Markdown常用语法介绍 Markdown是一种使用一定的语法将普通的文本转换成HTML标签文本的编辑语言，它的特点是可以使用普通的文本编辑器来编写，只需要按照特定的语法标记就可以得到丰富多样的HTML格式的文本。本文就来介绍一些常用的Markdown语法以及推荐几款方便又实用的Markdown编辑器。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Hello Centos</title><url>/post/hello-centos.html</url><categories><category>Linux</category></categories><tags><tag>Centos</tag><tag>基础配置</tag></tags><content type="html">以下内容基于最小化安装配置
+配置网卡 vi /etc/sysconfig/network-scripts/ifcfg-ens192 TYPE=Ethernet PROXY_METHOD=none BROWSER_ONLY=no BOOTPROTO=static //一般这里都设置静态IP地址，也就是固定IP地址 DEFROUTE=yes IPV4_FAILURE_FATAL=no IPV6INIT=yes IPV6_AUTOCONF=yes IPV6_DEFROUTE=yes IPV6_FAILURE_FATAL=no IPV6_ADDR_GEN_MODE=stable-privacy NAME=ens192 UUID=72373225-14af-4bec-ab51-dcb9c4daf1cc DEVICE=ens192 ONBOOT=yes //默认no,改成yes IPADDR=ip地址 //设置IP地址 PREFIX=24 //子网掩码，NETMASK=255.255.255.0 GATEWAY=网关 //配置网关 DNS1=首选DNS //配置DNS DNS2=备用DNS //配置DNS ZONE=public 重启网络
+service network restart SSH开启 验证是否安装
+yum list installed | grep openssh-server 安装
+yum install openssh-server 配置
+vi /etc/ssh/sshd_config 1、监听端口、监听地址前的#去掉
+Port22 ListenAddress 0.0.0.0 ListenAddress :: 2、开启允许远程登陆
+PermitRootLogin yes 3、开启使用用户名密码来作为连接验证
+PasswordAuthentication yes 开启sshd服务
+systemctl enable sshd.service systemctl list-unit-files | grep sshd 更换源 安装wget
+yum install -y wget cd /etc/yum.repos.d/ wget http://mirrors.aliyun.com/repo/Centos-7.repo mv CentOs-Base.repo CentOs-Base.repo.bak mv Centos-7.repo CentOs-Base.repo yum clean all yum makecache yum update</content></entry><entry><title>Markdown常用语法介绍</title><url>/post/markdown.html</url><categories><category>Hugo</category></categories><tags><tag>Markdown</tag><tag>常用语法</tag></tags><content type="html"><![CDATA[Markdown常用语法介绍 Markdown是一种使用一定的语法将普通的文本转换成HTML标签文本的编辑语言，它的特点是可以使用普通的文本编辑器来编写，只需要按照特定的语法标记就可以得到丰富多样的HTML格式的文本。本文就来介绍一些常用的Markdown语法以及推荐几款方便又实用的Markdown编辑器。
 换行问题 换行是markdown最基本的语法规则，也是它不同于普通文本的地方，想要在某一行之后进行换行只按常规的Enter键是不行的。换行有3种方式：
 第1种方式是在行的末尾添加至少两个空格，然后再接Enter另起一行；
 第2种方式是在需要换行的两行内容之间空一行；
