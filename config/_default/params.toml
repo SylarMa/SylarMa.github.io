@@ -10,7 +10,7 @@ favicon        = "img/favicon.png"
 SortBy              = "default"
 
 [footer]
-    since      = 2020
+    since      = 2005
     customText = ""
 
 [dateFormat]
@@ -51,7 +51,13 @@ SortBy              = "default"
 ## Comments
 [comments]
     enabled  = true
-    provider = "disqus"
+    provider = "utterances"
+
+    [comments.utterances]
+        repo = "SylarMa/SylarMa.github.io"
+        issue-term = "pathname"
+        label = "💬"
+        theme = "preferred-color-scheme"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
