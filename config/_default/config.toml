@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://icto.top/"
+baseurl = "https://icto.top"
 locale  = "zh"
 title   = "猪逻辑公园工作室"
 
