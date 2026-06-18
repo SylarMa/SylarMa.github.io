@@ -19,7 +19,7 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle = "信息及通讯科技办公室(ICTO) Information and Communication Technology Office"
     avatar   = "img/avatar.png"
 
 [article]
@@ -54,10 +54,10 @@ SortBy              = "default"
     provider = "utterances"
 
     [comments.utterances]
-        repo = "SylarMa/SylarMa.github.io"
+        repo       = "SylarMa/SylarMa.github.io"
         issue-term = "pathname"
-        label = "💬"
-        theme = "preferred-color-scheme"
+        label      = "💬"
+        theme      = "preferred-color-scheme"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
