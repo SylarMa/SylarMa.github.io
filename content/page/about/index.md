@@ -4,7 +4,7 @@ menu:
     main: 
         weight: 5
         params:
-            icon: link
+            icon: user
 
 comments: false
 ---
