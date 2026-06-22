@@ -11,6 +11,7 @@ build:
     list: always    # Change to "never" to hide the page from the list
 tags: 
     - themes
+    - hugo-theme-stack-starter
 categories:
     - hugo
 ---

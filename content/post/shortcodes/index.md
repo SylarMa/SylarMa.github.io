@@ -5,6 +5,7 @@ date: 2023-08-25 00:00:00+0000
 image: cover.jpg
 tags: 
     - themes
+    - Shortcodes
 categories:
     - hugo
 ---
