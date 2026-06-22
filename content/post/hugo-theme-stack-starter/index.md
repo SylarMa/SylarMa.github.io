@@ -2,7 +2,7 @@
 title: "基于 hugo-theme-stack-starter 快速搭建 Hugo 博客"
 description: "使用 hugo-theme-stack-starter 模板快速搭建个人博客并部署到 GitHub Pages 的完整指南"
 date: 2026-06-18T01:38:11Z
-image: 
+image: cover.jpg
 math: 
 license: 
 comments: true
