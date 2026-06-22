@@ -9,6 +9,10 @@ comments: true
 draft: fales
 build:
     list: always    # Change to "never" to hide the page from the list
+tags: 
+    - themes
+categories:
+    - hugo
 ---
 
 本文记录了使用 hugo-theme-stack-starter 模板快速搭建个人博客并部署到 GitHub Pages 的完整流程，包括模板使用、配置定制、内容创建和自动化部署等内容。
