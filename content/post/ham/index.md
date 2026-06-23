@@ -6,7 +6,7 @@ image: cover.jpg
 math: 
 license: 
 comments: true
-draft: fales
+draft: false
 build:
     list: always    # Change to "never" to hide the page from the list
 categories:
