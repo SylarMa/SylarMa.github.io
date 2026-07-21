@@ -9,6 +9,13 @@ comments: true
 draft: fales
 build:
     list: always    # Change to "never" to hide the page from the list
+categories:
+    - DataCom
+tags:
+    - DataCom
+    - HCIA
+    - 企业网络部署
+    - 运维与排障
 ---
 
 ## 通过认证验证的能力
