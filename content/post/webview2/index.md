@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Edge Webview2 Runtime支持Win7/8.1的最后一个版本V109.0.1518.140"
-description: 
+description: "该资源文件是Microsoft Edge WebView2 Runtime支持 Windows 7 /8.1 的最后一个版本，版本号为 V109.0.1518.140，包含 X86 和 X64 两个架构的安装包。"
 date: 2026-07-21T04:43:12Z
 image: cover.jpg
 math: 
